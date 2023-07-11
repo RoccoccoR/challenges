@@ -1,6 +1,3 @@
 # challenges
-# challenges
-# challenges
-# challenges
-# challenges
-# challenges
+
+From the bootcamp

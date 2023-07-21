@@ -22,6 +22,9 @@ root.append(machine, spinButton, result);
 //                                      ↙️
 spinButton.addEventListener("click", async () => {
   spinButton.disabled = true;
+
+  await Promise.all([wheel1.spin(), wheel2.spin(), wheel3.spin()]);
+
   /**
    * Hint 1:
    * The wheel elements have a spin method that returns a promise.
@@ -65,7 +68,6 @@ spinButton.addEventListener("click", async () => {
 
   spinButton.disabled = false;
 });
-
 /**
  * Bonus hint:
  * You can change the symbols that appear on the wheels by changing the

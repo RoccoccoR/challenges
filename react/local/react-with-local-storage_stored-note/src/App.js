@@ -7,9 +7,6 @@ export default function App() {
   const [note, setNote] = useLocalStorageState("");
   const [font, setFont] = useLocalStorageState("system-ui");
 
-  localStorage.setItem("notes", JSON.stringify(note));
-  localStorage.setItem("fonts", JSON.stringify(font));
-
   function handleNoteChange(newNote) {
     setNote(newNote);
   }

@@ -6,7 +6,7 @@ import { StyledButton } from "../Button/Button.styled";
 export default function ProductList() {
   const router = useRouter();
   const { data } = useSWR("/api/products");
-
+  console.log(data);
   if (!data) {
     return <h1>Loading...</h1>;
   }
